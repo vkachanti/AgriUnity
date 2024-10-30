@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="AgriUnityLogo.png" type="image/icon type" />
+    <title>AgriUnity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="nstylagr.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+    <style>
+      /* General styles */
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+      }
+  
+      .image-container {
+        position: relative;
+        text-align: center;
+        color: white;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+      }
+  
+      .image-container img {
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+  
+      .image-container .imagedis {
+        margin-top: 10px;
+        width: 70%;
+        height: auto;
+      }
+  
+      .image-container .text {
+        margin-top: 10px;
+        color: #000;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .hidden {
+        display: none;
+      }
+  
+      .disimage {
+        width: 50%;
+        height: 50%;
+      }
+  
+      /* Media queries for responsiveness */
+  
+      /* For tablets and smaller devices */
+      @media (max-width: 1024px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+  
+      /* For phones and smaller devices */
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+          gap: 10px;
+          padding: 10px;
+        }
+  
+        .image-container {
+          padding: 5px;
+        }
+  
+        .image-container img {
+          border-radius: 5px;
+        }
+  
+        .image-container .text {
+          padding: 3px 5px;
+          font-size: 14px;
+        }
+      }
+  
+      /* For very small devices */
+      @media (max-width: 480px) {
+        .image-container .text {
+          padding: 2px 4px;
+          font-size: 12px;
+        }
+  
+        .disimage {
+          width: 80%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+          <a href="#">AgriUnity</a>
+        </div>
+
+        <div class="menu">
+          <div class="menu-links">
+            <div class="dropdown">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <a href="NAgrMaterial.html">Agri Materials</a>
+              <div class="dropdown-content">
+                <a href="LOGINFORMAGR.html">Jntuk B.Tech</a>
+                <a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+                <a href="diploma.html" id="diploma">Diploma</a>
+                <a href="ecetMCQ.html" >E-CET MCQ</a>
+                <a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+                <a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="nresult.html">Results</a>
+            </div>
+            <div class="dropdown">
+              <a href="njobtraing.html">Job & Training</a>
+            </div>
+            <div class="dropdown">
+              <a href="nquiz.html">Quiz</a>
+            </div>
+            <div class="dropdown">
+              <a href="ncontact.html">Contact</a>
+            </div>
+          </div>
+          <button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+<div class="inside">
+
+<!-- Image grid container -->
+<div class="grid-container" id="grid-container">
+  <!-- Image section with text overlay -->
+  <div class="image-container" id="image-container12">
+    <h2 style="color:green">Job Update</h2>
+    <h3 style="color:green">Uploaded Date:22-August-2024</h3>
+    <img src="AgrifyFresh.jpg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
+  </div>
+  <div class="image-container" id="image-container11">
+    <h1 style="color:green">Job Upadate</h1>
+    <h2 style="color:red">Uploaded Date:14-Aug-2024</h2>
+    
+    <img src="CSA-New-Transparent-BG.png" id="hidden-image" class="hidden-image" alt="ABMDP Telangana Image">
+    <div class="text" id="show-detail-text11">Click here to get Full Detail </div>
+  </div>
+
+  <div class="image-container" id="image-container9">
+    <h2 style="color:green">Job Update</h2>
+    <h3 style="color:green">Uploaded Date:25-July-2024</h3>
+    <img src="KRISHYANI.jpg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
+    <!-- <div class="text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
+    <div class="blinking-text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div> -->
+
+  </div>
+  <div class="image-container" id="image-container9">
+    <h2 style="color:green">Job Update</h2>
+    <h3 style="color:green">Uploaded Date:13-August-2024</h3>
+    <img src="OGROOTS.jpg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
+    <!-- <div class="text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
+    <div class="blinking-text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div> -->
+
+  </div>
+
+
+  <div class="image-container" id="image-container7">
+    <h2 style="color:green">Job Update</h2>
+    <h3 style="color:green">Uploaded Date:25-July-2024</h3>
+    <img src="bigbasket.jpeg" alt="ABMDP Telangana Image" class="hidden-image" id="hidden-image">
+    <div class="text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
+    <div class="blinking-text" id="show-detail-text7"><h2>Click here to get Full Detail</h2> </div>
+
+  </div>
+
+
+  <div class="image-container" id="image-container6">
+    <h2 class="blinking-text" style="color:red">JOB NOTICATION</h2>
+    <h6 style="color:red">Uploaded Date:27/06/2024</h6>
+    <img src="isaayu farm.jpeg" id="hidden-image" class="hidden-image" alt="ABMDP Telangana Image">
+    <div class="text" id="show-detail-text6"><h2>Click here to get Full Detail</h2> </div>
+    <div class="blinking-text" id="show-detail-text6"><h2>Click here to get Full Detail</h2> </div>
+  </div>
+
+  <div class="image-container" id="image-container5">
+    <h6 style="color:red">Uploaded Date:19/06/2024</h6>
+    <img src="CGP.jpeg" id="hidden-image" class="hidden-image" alt="ABMDP Telangana Image">
+    <div class="text" id="show-detail-text5">Click here to get Full Detail </div>
+  </div>
+
+  <div class="image-container" id="image-container1">
+    <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+    <img src="ABMDP Telangana a3.png" id="hidden-image1" class="hidden-image" alt="ABMDP Telangana Image">
+    <div class="text" id="show-detail-text1">Click here to get Full Detail </div>
+  </div>
+
+  <div class="image-container" id="image-container2">
+    <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+    <img src="haccp.jpg" id="hidden-image2" class="hidden-image" alt="HACCP Image">
+    <div class="text" id="show-detail-text2">Click here to get Full details</div>
+  </div>
+
+  <div class="image-container" id="image-container3">
+    <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+    <img src="big.jpg" id="hidden-image3" class="hidden-image" alt="Big Data Analytics Image">
+    <div class="text" id="show-detail-text3">Click here to get Full Detail </div>
+  </div>
+
+  <div class="image-container" id="image-container4">
+    <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+    <img src="CEFF.webp" id="hidden-image4" class="hidden-image" alt="Rice Fortification Image">
+    <div class="text" id="show-detail-text4">Click here to get Full Detail </div>
+  </div>
+</div>
+
+<div id="detail-container1" class="hidden">
+  <h6 style="color:red">Uploaded Dated:05/06/2024</h6>
+  <h3 style="color:green">Agribusiness Management Development Program (ABMDP)* designed exclusively for prospective CEOs of Farmers Producer Organizations (FPOs)</h3>
+  <img src="ABMDP Telangana a3.png" class="disimage">
+  <p>Agribusiness Management Development Program (ABMDP), a unique course for Prospective CEOs of FPOs offered by a-IDEA, ICAR-NAARM with the support of NABARD TS RO 
+    for the duration of 60 days fully residential. The Program is focused on the development of managerial skills among the candidates and assist candidates to get a job interaction with FPOs in Telangana state.</p><br>
+  <p><strong> Eligibility Criteria:</strong><br>Minimum Qualification</p>
+  <br>
+  <ol> 
+    <li>Candidate must hold a graduation in any discipline from recognized universities.</li>
+    <li>40 is the maximum age limit to be eligible for this program.</li>
+    <li>Candidate should know Telugu and English language.</li>
+  </ol>
+  <br>
+  <p><b>Desirable Qualification</b></p>
+  <br>
+  <ol>
+    <li>Graduates/post-graduation in Agriculture & Allied Sectors, Engineering, Economics, Management, Commerce, B.Tech (Agriculture) & Veterinary in any similar stream of study</li>
+    <li>Work Experience in industry / FPOs</li>
+  </ol>
+  <p>Ready to take your agribusiness career to the next level? Don't miss this incredible opportunity to grow, learn, and lead!</p><br>
+  <p>Last date to Apply 15th July 2024</p><br>
+  <a href="https://aideanaarm.accubate.app/ext/form/2281/1/apply">Link https://aideanaarm.accubate.app/ext/form/2281/1/apply</a>
+  <br><br>
+</div>
+
+<div id="detail-container2" class="hidden">
+  <h6 style="color:red">Uploaded Dated:05/06/2024</h6>
+  <h3 style="color:green">ONLINE TRAINING ON SETTING UP HACCP PLAN AND MICROBIOLOGICAL FOOD SAFETY FOR SMALL SCALE FOOD INDUSTRIES</h3>
+  <img src="haccp.jpg" class="disimage">
+  <p>National Institute of Food Technology, Entrepreneurship and Management - Thanjavur (NIFTEM-T) announces Online Training on Setting up HACCP Plan and Microbiological Food Safety for Small Scale Food Industries on 21st May 2024</p><br>
+  <p>E- Certificate  will be provided<br>
+      Last date of Ref..  22 June 2024</p><br>
+  <a href="https://niftem-t.ac.in/haccp.php">Link: Click to Register</a><br>
+</div>
+
+<div id="detail-container3" class="hidden">
+  <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+  <h3 style="color:green">Big Data Analytics for Agriculture Research</h3>
+  <p><strong>The Department of Agriculture (DA) </strong> at 360 Research Foundation works to develop plans and policies for the development of agriculture, animal husbandry, dairy, fisheries, agricultural land policies, and food processing for farmers’ welfare.
+  It works in close coordination with the agriculture departments of national and state partners as well as regional.</p><br>
+  <img src="big.jpg" class="disimage">
+  <p><strong>Note:</strong></p>
+  <ol>
+    <li>All Fees are neither refundable nor transferable.</li>
+    <li>The 360 Research Foundation accepts online payments exclusively through the provided bank account; we disclaim responsibility for payments to any individual and are not liable for transactions made to unauthorized sources.</li>
+  </ol>
+  <p><strong>Bank Account Details:</strong><br>
+  Name: 360 Research Foundation<br>
+  Account Number: 6262101002995<br>
+  Bank Name: Canara Bank<br>
+  IFSC Code: CNRB0006262<br>
+  Branch: Narkatiaganj</p><br>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScJAPgJYzrqBimRoOFMSeszLzAWgxOfNaW-U0B_Eh1w-ms9JQ/viewform">Link: https://docs.google.com/forms/d/e/1FAIpQLScJAPgJYzrqBimRoOFMSeszLzAWgxOfNaW-U0B_Eh1w-ms9JQ/viewform</a><br><br>
+</div>
+
+<div id="detail-container4" class="hidden">
+  <h6 style="color:red">Uploaded Date:08/06/2024</h6>
+  <h3 style="color:green">One-Day Hands on Workshop on “Rice Fortification in India: Progression and Insights”</h3>
+      <img src="CEFF.webp" class="disimage">
+  <p><strong>Registration Open Date:</strong>04-Jun-2024</p>
+  <p><strong>Registration Close Date</strong>19-Jun-2024</p>
+  <p><strong>Event Start Date:</strong>20-Jun-2024</p>
+  <p><strong>Event End Date:</strong>20-Jun-2024</p>
+  <p><strong>Mode of Event:</strong>Physical</p>
+  <p><strong>Venue</strong>FRK Unit, CEFF, NIFTEM-K</p>
+  <p><strong>Mobile</strong>8607620106</p>
+  <p><strong>Registration Open Date:</strong>04-Jun-2024</p>
+  Link:<a href="http://www.ceffniftem.com/Home/training/MjY%3D"> http://www.ceffniftem.com/Home/training/MjY%3D</a><br><br>
+</div>
+
+<div id="detail-container5" class="hidden">
+  <h6 style="color:red">Uploaded Date:19/06/2024</h6>
+  <h1 style="color:green">Career Guidance Program</h1>
+  <p><h2>"Sow Your Future: Cultivate a Career in Agriculture"</h2><br>
+    A career guidance program in agriculture aims to provide individuals with the necessary skills, knowledge, and resources to pursue
+    fulfilling careers in various sectors of the agricultural industry. Here's a structured outline for such a program
+</p>
+      <img src="CGP.jpeg" class="disimage">
+      <ul>
+  <p>
+    <strong>  
+     <li>Introduction to Agriculture</li>
+     <li>Exploring Agricultural Specializations</li>
+     <li>Understanding Agricultural Systems</li>
+     <li>Farm Management and Operations</li>
+     <li>Agribusiness and Marketing</li>
+     <li>Technology and Innovation in Agriculture</li>
+     <li>Sustainable Agriculture Practices</li>
+     <li>Policy and Regulation in Agriculture</li>
+     <li>Entrepreneurship in Agriculture</li>
+     <li>Professional Development and Networking</li>
+     <li>Industry Insights and Guest Speakers</li>
+     <li>Capstone Projects and Career Planning</li>
+    </strong>
+  </p>
+  Apply Here ⏳👇:<br><a href="https://icfa.org.in/cgp.php"> https://icfa.org.in/cgp.php</a><br><br>
+</div>
+<!-- SIX -->
+<div id="detail-container6" class="hidden">
+<h6 style="color:red">Uploaded Date:27/06/2024</h6>
+<h1 style="color:green">JOB Notification</h1>
+<p><h2>Company name: Isaayu Agritech Pvt Ltd </p>
+    <img src="isaayu farm.jpeg" class="disimage">
+    <ul>
+      <P><b>JOB Role:</b>Agronomy Associate and Microbiology Research Associate</P>
+      <p>Last date to Apply 30 June 2024</p><br>
+      <p>Semd resume to:isaayufarms@gmail.com</p>
+<p>
+</div>
+
+<div id="detail-container7" class="hidden">
+<h6 style="color:red">Uploaded Date:25-July-2024</h6>
+<h1 style="color:green">JOB Notification</h1>
+<p><h2>Company name: BIG BASKET(TATA sponsored Company)</h2></p>
+    <img src="bigbasket.jpeg" class="disimage">
+  
+      <p>Bigbasket is hiring Agriculture Freshers. Lets join your hand with us to contribute to future of agriculture.</p>
+      <P><b>JOB Role:</b>QC Incharge</P>
+      <P><b>JOB Location:</b>North India(Haryana/UP/Himachal/Delhi)</P>
+      <P><b>Salary:</b>Upto 4LPA</P>
+      <p><b>Job description given below</b><p>
+        <ol>
+        <li>Assortment plan.</li>
+        <li> Maintain DC fill rate.</li>
+        <li>Analysis & control out of stock.</li>
+        <li>Products life cycle, Growth/D-Growth.</li>
+        <li>Control write off.</li>
+        <li> Purchase order creation & new vender management.</li>
+        </ol>
+
+        <p>To apply for this job email your details to: <b>Apoorva.shukla@bigbasket.com</p>
+<p>
+
+</div>
+
+<div id="detail-container11" class="hidden" style="font-weight: normal;"">
+<h6 style="color:red">Uploaded Date: 14-Aug-2024</h6>
+<h3 style="color:green">Livelihood Coordinator</h3>
+<img src="CSA-New-Transparent-BG.png" class="disimage">
+
+<p><b>Job Title:</b> Livelihood Coordinator</p>
+<p><b>Upper Age Limit:</b> 45 years</p>
+<p><b>Working Locations:</b> Konaseema and West Godavari districts in Andhra Pradesh.</p>
+<p><b>Reporting to:</b> Project Coordinator</p>
+<p><b>Period of Contract:</b> Contract will be for a period of 18 months after an initial probation period of 3 months but can be extended.</p>
+<p><b>Salary:</b> Salary will be decided based on the profile of the candidate.</p>
+
+<p><b>About Us:</b></p>
+<p>The Centre for Sustainable Agriculture (CSA) (https://csa-india.org/) was established in 2004 with the goal of promoting sustainable food systems that are ecologically, economically, and socially viable. CSA implemented experimental approaches, including innovative practices, processes, and institutions, to build resilience against climate and market risks for farmer households. The primary work of CSA is spread across Andhra Pradesh, Telangana, and Maharashtra.</p>
+
+<p><b>Job Summary:</b></p>
+<p>The Livelihood Coordinator will be responsible for designing, implementing, and monitoring programs aimed at improving agricultural practices and increasing household income for rural communities. This role involves working closely with local farmers, entrepreneurs, women’s groups, and other stakeholders to develop sustainable livelihood strategies and ensure effective program delivery.</p>
+
+<p><b>Key Responsibilities:</b></p>
+<ul>
+  <li>Conduct feasibility studies for understanding potential interventions with various farmers.</li>
+  <li>Identify entrepreneurs and implement livelihood-related initiatives, focusing on agriculture and income generation.</li>
+  <li>Collaborate with local communities, NGOs, and government agencies to design tailored interventions.</li>
+  <li>Organize and facilitate training sessions for farmers on improved agricultural practices, value addition, and market linkages.</li>
+  <li>Support the establishment and strengthening of women entrepreneurs, farmer groups, cooperatives, and women’s self-help groups.</li>
+  <li>Develop and implement M&E frameworks to track program progress and impact.</li>
+  <li>Build and maintain strong relationships with local communities, partners, and other stakeholders.</li>
+  <li>Represent the organization at meetings, workshops, and conferences related to livelihood and agriculture.</li>
+  <li>Identify and pursue funding opportunities to support women entrepreneurs.</li>
+</ul>
+
+<p><b>Desired Candidate Profile:</b></p>
+<ul>
+  <li>Bachelor’s degree in Agriculture, Rural Development, or a related field (Master’s degree preferred).</li>
+  <li>At least 3 years of experience in livelihood programming, particularly in agriculture.</li>
+  <li>Preference for Women candidates.</li>
+  <li>Strong understanding of sustainable agricultural practices and rural livelihoods.</li>
+  <li>Experience working with local communities, NGOs, and government agencies.</li>
+  <li>Excellent project management, training, and facilitation skills.</li>
+  <li>Strong analytical and problem-solving abilities.</li>
+  <li>Ability to work independently and as part of a team.</li>
+  <li>Proficiency in Telugu and English is a must.</li>
+  <li>Ability to work effectively with diverse groups and stakeholders.</li>
+  <li>Excellent organizational and time management skills.</li>
+  <li>Ability to travel to project sites.</li>
+</ul>
+
+<p><b>How to Apply:</b></p>
+<p>Email to send the CVs/applications: <a href="mailto:jobs@csa-india.org">jobs@csa-india.org</a> with a subject line: "Application for the post of Livelihood Coordinator".</p>
+<p>Last date for Submission of applications: 24th August 2024.</p>
+<p>Contact Numbers for further clarifications: 8500683300.</p>
+</div>
+
+
+
+</div>  
+    <!-- ------------------Footer------------------- -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-section">
+          <div class="footer-subscribe">
+            <h2>Subscribe to stay up-to-date with the latest Updates</h2>
+            <div class="input-box">
+              <input type="email" placeholder="Email Address" />
+              <button>
+                <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001" stroke="#0E100F"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <nav class="footer-nav">
+            <div>
+              <h3>AgriUnity</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="ncontact.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Connect</h3>
+              <ul>
+                <li><a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a></li>
+                <li><a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer-copyright">
+          <p>©2023 AgriUnity All rights reserved.</p>
+          <p>Privacy Policy.</p>
+          <p>Terms of Use.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+     
+     document.getElementById('show-detail-text1').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container1');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text2').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container2');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text3').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container3');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text4').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container4');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text5').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container5');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text6').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container6');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text7').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container7');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+    document.getElementById('show-detail-text11').addEventListener('click', function() {
+      var detailContainer = document.getElementById('detail-container11');
+      var gridContainer = document.getElementById('grid-container');
+      detailContainer.classList.toggle('hidden');
+      gridContainer.classList.toggle('hidden');
+    });
+
+      const menuBtn = document.querySelector(".menu-btn");
+      const menu = document.querySelector(".menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+     <script src="main.js"></script>
+  </body>
+</html>

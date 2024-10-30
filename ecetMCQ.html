@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="AgriUnityLogo.png" type="image/icon type" />
+    <title>AgriUnity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="nstylagr.css" />
+    <style>
+      /* Button style within .inside div */
+      .inside button {
+        border-radius: 20px;
+        color: white;
+        background-color: #001e4d;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      
+      /* Optional hover effect */
+      .inside button:hover {
+        background-color: #003366; /* Darker shade on hover */
+      }
+    
+      /* Styling for the button text link */
+      .inside button a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+      }
+    </style>
+    <link rel="stylesheet" href="logincss.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+    <script src="nagr.js"></script>
+  </head>
+  <body>
+    <div id="menu">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+          <a href="#">AgriUnity</a>
+        </div>
+        <div class="menu">
+          <div class="menu-links">
+            <div class="dropdown">
+              <a href="NIndexAgrUniuty.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <a href="NAgrMaterial.html">Agri Materials</a>
+              <div class="dropdown-content">
+                <a href="LOGINFORMAGR.html">JNTUK B.Tech Materals</a>
+                <a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+                <a href="diploma.html" id="diploma">Diploma</a>
+                <a href="#" id="ecet-mcq-btn">E-CET MCQ</a>
+                <a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+                <a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="nresult.html">Results</a>
+            </div>
+            <div class="dropdown">
+              <a href="njobtraing.html">Job & Training</a>
+            </div>
+            <div class="dropdown">
+              <a href="nquiz.html">Quiz</a>
+            </div>
+            <div class="dropdown">
+              <a href="ncontact.html">Contact</a>
+            </div>
+          </div>
+          <button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+
+    <div class="inside">
+      <!-- ECET Material List -->
+      <div id="ecetlist" >
+        <br>
+        <button style="border-radius: 20px; color: white; background-color: #001e4d;">
+          <a href="NAgrMaterial.html" style="text-decoration: none; color: inherit; display: block;"><b>Go Back</b></a>
+        </button>
+        <br>
+        <h3 class="blinking-text">Few Subject MCQ PDFs are Not Available. Will update as earliest As Possible. <br></h3>
+        <br>
+        <h2>E-CET MCQs</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Material Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Surveying & Leveling</td>
+              <td>
+                <a href="Surveying_Leveling_ECET.pdf" download>
+                  <button>DOWNLOAD</button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Ecet Agri Implements</td>
+              <td>
+                <a href="AGIMPLEMENT.pdf" download>
+                  <button id="downloadAgriImp">DOWNLOAD</button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Tractor Systems</td>
+              <td>
+                <a href="tractorsys.pdf" download>
+                  <button id="downloadTrSystems">DOWNLOAD</button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><b>PQP Ecet 2020</b></td>
+              <td>
+                <a href="ACEQP2020.pdf" download>
+                  <button id="downloadpqpecet">DOWNLOAD</button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><b>PQP Ecet 2021</b></td>
+              <td>
+                <a href="ACE_QP_21.pdf" download>
+                  <button id="downloadpqpecettt">DOWNLOAD</button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><b>PQP Ecet 2022</b></td>
+              <td>
+                <a href="ACE_QP_22.pdf" download>
+                  <button id="downloadpqpecetttt">DOWNLOAD</button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><b>PQP Ecet 2023</b></td>
+              <td>
+                <a href="ACE_QP_23.pdf" download>
+                  <button id="downloadpqpecett">DOWNLOAD</button>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-section">
+          <div class="footer-subscribe">
+            <h2>Subscribe to stay up-to-date with the latest Updates</h2>
+            <div class="input-box">
+              <input type="email" placeholder="Email Address" />
+              <button>
+                <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001" stroke="#0E100F"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <nav class="footer-nav">
+            <div>
+              <h3>AgriUnity</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="ncontact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Connect</h3>
+              <ul>
+                <li><a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a></li>
+                <li><a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-copyright">
+          <p>©2023 AgriUnity All rights reserved.</p>
+          <p>Privacy Policy.</p>
+          <p>Terms of Use.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript to toggle the ECET list -->
+    <script>
+      
+    </script>
+  </body>
+</html>

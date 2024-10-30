@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="AgriUnityLogo.png" type="image/icon type" />
+    <title>AgriUnity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="nstylagr.css" />
+    <link rel="stylesheet" href="logincss.css" />
+    <style>
+     .inside{
+      background-color: #ffff;
+     }
+    </style>
+    <!-- <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" /> -->
+    <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  </head>
+  <body>
+    <div id="menu">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+          <a href="#">AgriUnity</a>
+        </div>
+
+        <div class="menu">
+          <div class="menu-links">
+            <div class="dropdown">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <a href="NAgrMaterial.html">Agri Materials</a>
+              <div class="dropdown-content">
+                <a href="LOGINFORMAGR.html">JNTUK B.Tech Materals</a>
+                <a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+                <a href="diploma.html" id="diploma">Diploma</a>
+                <a href="ecetMCQ.html" id="ecet-mcq">E-CET MCQ</a>
+                <a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+                <a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="nresult.html">Results</a>
+            </div>
+            <div class="dropdown">
+              <a href="njobtraing.html">Job & Training</a>
+            </div>
+            <div class="dropdown">
+              <a href="nquiz.html">Quiz</a>
+            </div>
+            <div class="dropdown">
+              <a href="ncontact.html">Contact</a>
+            </div>
+          </div>
+          <button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+    <br>
+      <br>
+    <div class="inside">
+    
+      <div class="button-container">
+        <a href="LOGINFORMAGR.html">
+          <button class="materials-button">JNTUK B.Tech Material</button>
+        </a>
+        <a href="#" onclick="showdiplomamaterils()">
+          <button class="materials-button">Diploma Agri Engg Materials</button>
+        </a>
+        <a href="#" onclick="showjntukpqp()">
+          <button class="materials-button">JNTUK B.Tech Previous Question Papers</button>
+        </a>
+        <a href="#" onclick="showafo()">
+          <button class="materials-button">AFO MCQ</button>
+        </a>
+        <a href="ecetMCQ.html" id="ecet-mcq">
+          <button class="materials-button">E-CET MCQ</button>
+        </a>
+        <a href="pgcetMCQ.html" onclick="showpgcet()">
+          <button class="materials-button">PG-CET MCQ</button>
+        </a>
+      </div>
+    </div>
+    <br>
+    <br>
+
+  
+    <div  id="pgcetlist" style="display: none;">
+      <br>
+      <br>
+      <button style="border-radius: 20px; color: white; background-color: #001e4d;">
+        <a href="IndexAgrMaterial.html" onclick="showMaterials()" style="text-decoration: none; color: inherit; display: block;"><b>Go Back</b></a>
+      </button>
+      <br>
+      <h3 class="blinking-text">Few Subject MCQ PDFs are Not Available,Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.<br><b>Sorry for Inconvenience.</b></h3>
+      <br>
+      
+      <h1>PG E-CET MCQs</h1>
+      <table> 
+        <tbody>
+          <thead>
+            <tr>
+                <th>Material Name</th>
+                <th>Action</th>
+            </tr>
+          </thead>
+          <th>Previous Question Papers</th>
+          <tr><td><b>PQP PG-Ecet 2023</b></td><td><button id="downloadpgpqpecet">DOWNLOAD</button></td></tr>
+          <tr><td><b>PQP PG-Ecet 2022</b></td><td><button id="downloadpgpqpecett">DOWNLOAD</button></td></tr>
+          <tr><td><b>PQP PG-Ecet 2021</b></td><td><button id="downloadpgpqpecettt">DOWNLOAD</button></td></tr>
+          <tr><td><b>PQP PG-Ecet 2017</b></td><td><button id="downloadpgpqpecetttt">DOWNLOAD</button></td></tr>
+          <tr><td><b>PQP PG-Ecet 2016</b></td><td><button id="downloadpgpqpecettttt">DOWNLOAD</button></td></tr>
+        </tbody>
+      </table>
+
+        </tbody>
+      </table>
+    </div>
+    <div  id="afolist" style="display: none;">
+      <br><br>
+      <button style="border-radius: 20px; color: white; background-color: #001e4d;">
+        <a href="#materials" onclick="showMaterials()" style="text-decoration: none; color: inherit; display: block;"><b>Go Back</b></a>
+      </button><br>
+      <h3 class="blinking-text">AFO  MCQ PDFs are Not Will be  update As Earliest As Possible.Rest assured, we are working to update our offerings.</h3>
+    </div>
+  <!-- ------------------Footer------------------- -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-section">
+        <div class="footer-subscribe">
+          <h2>Subscribe to stay up-to-date with the latest Updates</h2>
+          <div class="input-box">
+            <input type="email" placeholder="Email Address" />
+            <button>
+              <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001" stroke="#0E100F"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <div>
+            <h3>AgriUnity</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="ncontact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a></li>
+              <li><a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-copyright">
+        <p>©2023 AgriUnity All rights reserved.</p>
+        <p>Privacy Policy.</p>
+        <p>Terms of Use.</p>
+      </div>
+    </div>
+  </footer>
+  
+<!-- hsgdfuigsufyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuug -->
+<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="nagr.js"></script>
+<script src="login.js"></script>
+<script src="https://cdn.cloudpdf.com/webviewer/cloudpdf.min.js"></script>
+<script src="login.js"></script>
+
+<script>
+function showAdditionalImage() {
+  var additionalImage = document.getElementById('additionalImage');
+  additionalImage.style.display = 'block';
+  setTimeout(function() {
+    additionalImage.style.display = 'none';
+  }, 4500);
+}
+setTimeout(showAdditionalImage, 100);
+const upiImage = document.getElementById("upi");
+
+upiImage.addEventListener("click", function() {
+this.style.filter = "none"; // Remove blur on click
+});
+
+</script>
+<script>
+  const menuBtn = document.querySelector(".menu-btn");
+  const menu = document.querySelector(".menu");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+</script>
+<script src="main.js"></script>
+ </body>
+</html>

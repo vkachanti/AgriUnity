@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 90px;
+}
+
+.inside {
+  margin-left: 40px;
+  text-align: justify;
+  margin-right: 20px;
+}
+/* Navbar adjustments for alignment */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  height: 90px;
+  background-color: #12ad2b;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Higher z-index */
+}
+
+/* Ensure image and text stay together */
+.navbar .logo img {
+  height: 40px; /* Adjust the size if needed */
+  margin-right: 10px; /* Space between the logo and text */
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Media query to maintain layout on smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Optional: Adjust padding or alignment for smaller screens */
+  .navbar .logo a {
+    font-size: 1.2rem;
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  height: 90px;
+  background-color: #12ad2b;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid #fff;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: white;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  color: green;
+  background-color: white;
+}
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #fcfcfc;
+  transition: 0.2s;
+}
+/* Default styling */
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #fcfcfc;
+  transition: 0.2s;
+}
+
+/* Medium screens (tablets, etc.) */
+@media (max-width: 768px) {
+  .log-in {
+ 
+    padding: 5px 5px;
+    text-align: justify;
+    border-radius: 4px;
+    border-radius: 6px;
+  }
+}
+
+/* Small screens (mobiles, etc.) */
+@media (max-width: 480px) {
+  .log-in {
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 4px;
+    border-radius: 6px;
+  }
+}
+
+.log-in:hover {
+  background-color: whitesmoke;
+  color: orange;
+}
+.logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 53rem) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #12ad2b;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    border: none;
+  }
+
+  .log-in {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+
+
+/* DropDOWN */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 10%);
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    box-shadow:white;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Links inside the Dropdown */
+  .dropdown-content a {
+    color: #999999;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+  }
+  
+  /* Hover effect for Dropdown links */
+  .dropdown-content a:hover {
+    color: black;
+  }
+  
+  /* Show Dropdown on Hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  /* what we offer */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Add padding to create space around the container */
+    margin-top: 20px; /* Add margin to create space between sections */
+    background-color: #f9f9f9; /* Example background color */
+  }
+  .center-container h3 {
+color: #12AD2B;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+  .image-container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Display one column per row on smaller screens */
+    }
+    .center-container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+
+ /* whats we offer cmplted  */
+
+
+
+ #homedetails li {
+    list-style-type: disc;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* FOOTER */
+ 
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap");
+
+
+
+footer {
+  width: 100%;
+  background-color: #fffce1;
+}
+
+input,
+a,
+button,
+footer li {
+  all: unset;
+  font: inherit;
+}
+a,
+button {
+  cursor: pointer;
+}
+
+footer {
+  padding: 3.5rem clamp(3rem, 6vw, 14rem);
+}
+.footer-wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-subscribe {
+  max-width: clamp(20rem, 33vw, 33rem);
+}
+.footer-subscribe > h2 {
+  font-size: clamp(1.5rem, 2.3vw, 2.25rem);
+}
+.input-box {
+  display: flex;
+  max-width: 100%;
+  padding-block: 1rem;
+  border-bottom: 1px solid black;
+  margin-top: 3rem;
+}
+.input-box > input {
+  flex-grow: 1;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(3rem, 4vw, 7rem);
+}
+.footer-nav > div > h3 {
+  font-size: 1rem;
+}
+.footer-nav > div > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.footer-nav > div li {
+  font-size: 1.125rem;
+  font-weight: 700;
+  transition: opacity 200ms ease;
+}
+.footer-nav > div li:hover {
+  opacity: 0.5;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  margin-top: 5rem;
+}
+
+@media (width <= 53rem) {
+  .footer-subscribe {
+    max-width: 100%;
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* overlay */
+/* Overlay styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Frame and image styling */
+.overlay-content {
+  position: relative;
+  border: 5px solid white; /* Frame around the image */
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.overlay-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Close button styling */
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
