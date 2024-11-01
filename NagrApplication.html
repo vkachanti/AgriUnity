@@ -19,6 +19,17 @@
             });
         })();
     </script>
+     <style>
+        .blinking-text {
+            animation: blink 1s steps(5, start) infinite;
+            color:darkblue
+        }
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
 </head>
 <body>
     <section class="container">
@@ -68,9 +79,9 @@
                 </div>
             </div>
             <div>
-              <a class="blinking-text">Click on Image To Get QR</a><br>
+                <a class="blinking-text">Click on Image To Get QR</a><br>
                 <a style="color:red;">"Limited-time offer: Get access for only &#8377;79 (originally <strike>&#8377;100</strike>)</a><br>
-                <img src="79upi.jpg" alt="UPI" class="upi" id="upi" style="filter: blur(5px); cursor: pointer;">
+                <img src="79upi.jpg" alt="UPI" class="upi" id="upi" style="filter: blur(5px); cursor: pointer;" onclick="removeBlur()">
             </div>  
             <div class="input-box">
               <label>UTR NO /Transction NO</label>
@@ -173,7 +184,10 @@
         $('#statusModal').modal('show'); // Requires Bootstrap jQuery
     }
 
-    
+    function removeBlur() {
+            const upiImage = document.getElementById("upi");
+            upiImage.style.filter = "none"; // Remove the blur effect
+        }
 </script>>    
 </body>
 </html>
