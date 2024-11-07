@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="C:\Users\vkach\OneDrive\Desktop\AgrUnity\nstylagr.css" />
+    <link rel="stylesheet" href="logincss.css" />
+<!--===============================================================================================-->
+
+</head>
+<body>
+	<div id="menu">
+		<nav class="navbar">
+		  <div class="logo">
+			<img src="C:\Users\vkach\OneDrive\Desktop\AgrUnity\AgriUnityLogo.png" alt="AgriUnity Logo" class="logo-image" />
+			<a href="#">AgriUnity</a>
+		  </div>
+  
+		  <div class="menu">
+			<div class="menu-links">
+			  <div class="dropdown">
+				<a href="C:\Users\vkach\OneDrive\Desktop\AgrUnity\index.html">Home</a>
+			  </div>
+			  <div class="dropdown">
+				<a href="NAgrMaterial.html">Agri Materials</a>
+				<div class="dropdown-content">
+					<a href="LOGINFORMAGR.html">Jntuk B.Tech</a>
+					<a href="jntukBTech.html" id="jntuk">JNTUK B.Tech PQP</a>
+					<a href="diploma.html" id="diploma">Diploma</a>
+					<a href="ecetMCQ.html" >E-CET MCQ</a>
+					<a href="afoMCQ.html" id="afo-mcq">AFO MCQ</a>
+					<a href="pgcetMCQ.html" id="pgcet-mcq">PG-CET MCQ</a>
+				</div>
+			  </div>
+			  <div class="dropdown">
+				<a href="nresult.html">Results</a>
+			  </div>
+			  <div class="dropdown">
+				<a href="njobtraing.html">Job & Training</a>
+			  </div>
+			  <div class="dropdown">
+				<a href="nquiz.html">Quiz</a>
+			  </div>
+			  <div class="dropdown">
+				<a href="">Contact</a>
+			  </div>
+			</div>
+			<button class="log-in" onclick="location.href='LOGINFORMAGR.html'">Log In</button>
+		  </div>
+		  <div class="menu-btn">
+			<i class="fa-solid fa-bars"></i>
+		  </div>
+		</nav>
+	  </div>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="images/img-01.png" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Get in touch
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" name="name" placeholder="Name">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="text" name="subject" placeholder="Subject">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Message is required">
+					<textarea class="input1" name="message" placeholder="Message"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Send Email
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="statusModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="statusModalLabel"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" id="modalMessage"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-wrapper">
+		  <div class="footer-section">
+			<div class="footer-subscribe">
+			  <h2>Subscribe to stay up-to-date with the latest Updates</h2>
+			  <div class="input-box">
+				<input type="email" placeholder="Email Address" />
+				<button>
+				  <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001" stroke="#0E100F"></path>
+				  </svg>
+				</button>
+			  </div>
+			</div>
+			<nav class="footer-nav">
+			  <div>
+				<h3>AgriUnity</h3>
+				<ul>
+				  <li><a href="#">About</a></li>
+				  <li><a href="#">Blog</a></li>
+				  <li><a href="C:\Users\vkach\Downloads\contact-form-v12\ContactFrom_v1\index.html">Contact Us</a></li>
+				</ul>
+			  </div>
+	
+			  <div>
+				<h3>Connect</h3>
+				<ul>
+				  <li><a href="https://whatsapp.com/channel/0029VaV5evY65yD5VcczKU02"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp</a></li>
+				  <li><a href="https://www.facebook.com/profile.php?id=100065116946238&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a></li>
+				  <li><a href="https://instagram.com/agricultural_engineering__?igshid=OGQ5ZDc2ODk2ZA==s"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+				</ul>
+			  </div>
+			</nav>
+		  </div>
+	
+		  <div class="footer-copyright">
+			<p>©2023 AgriUnity All rights reserved.</p>
+			<p>Privacy Policy.</p>
+			<p>Terms of Use.</p>
+		  </div>
+		</div>
+	  </footer>
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+	<!-- <script src="js/main.js"></script> -->
+    
+	<script>
+		const menuBtn = document.querySelector(".menu-btn");
+		const menu = document.querySelector(".menu");
+  
+		menuBtn.addEventListener("click", () => {
+		  menu.classList.toggle("show");
+		});
+	  </script>
+	  <script type="text/javascript"
+	  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+<script src="cn.js"></script>
+</body>
+</html>
