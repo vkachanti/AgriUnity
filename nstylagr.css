@@ -5,11 +5,7 @@
 *::after {
   box-sizing: border-box;
 }
-body {
-   /* S      width: 1024px;et a desktop width */
-        margin: 0 auto;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
+
 body {
   margin: 0;
   padding: 0;
