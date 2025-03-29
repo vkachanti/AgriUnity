@@ -620,14 +620,3 @@ function hideSidebar(){
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none'
 }
-
- function isMobile() {
-            return /Mobi|Android/i.test(navigator.userAgent);
-        }
-
-        // Prompt user to enable desktop site if on mobile
-        window.onload = function () {
-            if (isMobile()) {
-                alert("For a better experience, please enable the Desktop Site option in your browser settings.");
-            }
-        };
