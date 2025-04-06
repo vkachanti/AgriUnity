@@ -18,9 +18,7 @@ function login() {
     const password = document.getElementById('password').value;
 
     // Validate credentials
-    if (email === "vkachanti@gmail.com" && password === "vamsi"|| email === "nagamanimandangi44@gmail.com" && password==="Naga@1445" || email === "djaveedbasha7@gmail.com" && password==="basha12345"||email === "karamrajesh10072000@gmail.com" && password==="r@jesh12345" || email === "satwikpagolu@gmail.com" && password === "materials" ||
-         email === "narasimhaaditya.1424@gmail.com" && password === "aditya1424" || email === "badanasaikumar01@gmail.com" && password === "7032309064" ||
-email === "pandulauma@gmail.com" && password === "Uma@70958") {
+    if (email === "vkachanti@gmail.com" && password === "vamsi") {
         // Hide the login section
         document.getElementById("login-section").style.display = "none";
         
