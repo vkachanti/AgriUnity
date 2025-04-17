@@ -18,7 +18,7 @@ function login() {
     const password = document.getElementById('password').value;
 
     // Validate credentials
-    if (email === "vkachanti@gmail.com" && password === "vamsi") {
+    if (email === "vkachanti@gmail.com" && password === "vamsi"|| email === "ajayvemurla92710@gmail.com" && password === "Ajay@1603") {
         // Hide the login section
         document.getElementById("login-section").style.display = "none";
         
