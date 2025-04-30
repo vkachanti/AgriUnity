@@ -19,7 +19,7 @@ function login() {
 
     // Validate credentials
     if (email === "vkachanti@gmail.com" && password === "vamsi"|| email === "ajayvemurla92710@gmail.com" && password === "Ajay@1603" ||
-        email === "narasimhaaditya.1424@gmail.com" && password === "aditya1424") {
+        email === "narasimhaaditya.1424@gmail.com" && password === "aditya1424" || email === "vasupalepu07@gmail.com" && password === "Vasu8310") {
         // Hide the login section
         document.getElementById("login-section").style.display = "none";
         
